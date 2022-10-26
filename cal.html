@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="style2.css">
+
+<body>
+  <h1>Calculator</h1>
+  <div class="container">
+    <form action="">
+      <a id="copy"><img src="https://fontmeme.com/permalink/221020/ed1cd82cbf474792784db60d644e2f66.png"
+          alt="glow-effect" border="0"></a>
+      <input type="text" id="screen">
+      <br>
+      <!--button_raw1 -->
+      <input class="button number" type="button" value="7" onclick="btnClick(value)">
+      <input class="button number" type="button" value="8" onclick="btnClick(value)">
+      <input class="button number" type="button" value="9" onclick="btnClick(value)">
+      <input class="button operator" type="button" value="/" onclick="btnClick(value)">
+      <br>
+      <!--button_raw2 -->
+      <input class="button number" type="button" value="4" onclick="btnClick(value)">
+      <input class="button number" type="button" value="5" onclick="btnClick(value)">
+      <input class="button number" type="button" value="6" onclick="btnClick(value)">
+      <input class="button operator" type="button" value="*" onclick="btnClick(value)">
+      <br>
+      <!--button_raw3 -->
+      <input class="button number" type="button" value="1" onclick="btnClick(value)">
+      <input class="button number" type="button" value="2" onclick="btnClick(value)">
+      <input class="button number" type="button" value="3" onclick="btnClick(value)">
+      <input class="button operator" type="button" value="+" onclick="btnClick(value)">
+      <br>
+      <!--button_raw4 -->
+      <input class="button clear" type="button" value="C" onclick="screenClean()">
+      <input class="button number" type="button" value="0" onclick="btnClick(value)">
+      <input class="button result" type="button" value="=" onclick="result()">
+      <input class="button operator" type="button" value="-" onclick="btnClick(value)">
+      <br>
+
+
+
+    </form>
+
+  </div>
+
+  <script src="./cal.js"></script>
+</body>
+
+</html>
